@@ -12,7 +12,8 @@ def customdecorator(foo):
         for i in args:
             if result < 0:
                 result += i
-            result -= i
+            else:
+                result -= i
         values = {"sqrt": math.sqrt(val),
                   "add": val,
                   "sub": result}
